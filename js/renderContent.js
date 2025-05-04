@@ -1,17 +1,35 @@
-import { pageData } from './sampleData.js';
+// js/renderContent.js
+
+import { pageContent } from './pageContent.js';
 
 const contentDiv = document.getElementById('content');
 
-pageData.forEach(section => {
-  const sectionDiv = document.createElement('section');
+pageContent.forEach(section => {
+  const sectionEl = document.createElement('section');
+  sectionEl.className = 'info-section';
 
-  const heading = document.createElement('h2');
-  heading.textContent = section.heading;
+  const titleEl = document.createElement('h2');
+  titleEl.textContent = section.title;
+  sectionEl.appendChild(titleEl);
 
-  const para = document.createElement('p');
-  para.textContent = section.content;
+  if (section.paragraphs) {
+    section.paragraphs.forEach(paraHTML => {
+      const p = document.createElement('p');
+      p.innerHTML = paraHTML;
+      sectionEl.appendChild(p);
+    });
+  }
 
-  sectionDiv.appendChild(heading);
-  sectionDiv.appendChild(para);
-  contentDiv.appendChild(sectionDiv);
+  if (section.list) {
+    const ul = document.createElement('ul');
+    section.list.forEach(item => {
+      const li = document.createElement('li');
+      li.innerHTML = item;
+      ul.appendChild(li);
+    });
+    sectionEl.appendChild(ul);
+  }
+
+  contentDiv.appendChild(sectionEl);
 });
+    
