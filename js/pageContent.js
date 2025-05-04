@@ -1,4 +1,4 @@
-export const pageContent = [
+export const pageData = [
   {
     title: 'IGNOU MA Political Science Admission 2025',
     paragraphs: [
