@@ -18,6 +18,8 @@ function simulateTyping(text, callback) {
             index++;
             setTimeout(typeChar, typingSpeed);
         } else {
+            // ⬇️ Ensure scroll after typing
+            chatBox.scrollTop = chatBox.scrollHeight;
             callback();
         }
     }

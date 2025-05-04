@@ -19,7 +19,7 @@ export const intents = [
     },
     {
       tags: ['process'],
-      keywords: ['process', 'procedure', 'how', 'to', 'steps', 'admission', 'register'],
+      keywords: ['process', 'where', 'apply', 'procedure', 'how', 'to', 'steps', 'admission', 'register'],
       responseTag: 'process'
     },
     {
