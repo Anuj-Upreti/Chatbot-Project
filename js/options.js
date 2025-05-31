@@ -1,8 +1,8 @@
 // js/options.js
 
 export const chatbotOptions = [
-  "Fees",
-  "Assignment Dates",
+  "Result",
+  "Hall Ticket",
   "Exams",
   "Admission July Session"
 ];
