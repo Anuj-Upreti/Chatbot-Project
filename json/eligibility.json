@@ -1,32 +1,30 @@
-// json/eligibility.json
-
 [
   {
-    "course_id": 001,
+    "course_id": 1,
     "eligibility": "Bachelor’s Degree or a higher degree from a recognized University."
   },
   {
-    "course_id": 002,
+    "course_id": 2,
     "eligibility": "Passed Bachelor Degree of Minimum 3 years duration with at least 50% marks (45% in case of candidates belonging to reserved category)."
   },
   {
-    "course_id": 003,
+    "course_id": 3,
     "eligibility": "Passed Bachelor Degree of Minimum 3 years duration with at least 50% marks (45% in case of candidates belonging to reserved category)."
   },
   {
-    "course_id": 004,
+    "course_id": 4,
     "eligibility": "Passed Bachelor Degree of Minimum 3 years duration with at least 50% marks (45% in case of candidates belonging to reserved category)."
   },
   {
-    "course_id": 005,
+    "course_id": 5,
     "eligibility": "Passed Bachelor Degree of Minimum 3 years duration with at least 50% marks (45% in case of candidates belonging to reserved category)."
   },
   {
-    "course_id": 006,
+    "course_id": 6,
     "eligibility": "Passed Bachelor Degree of Minimum 3 years duration with at least 50% marks (45% in case of candidates belonging to reserved category)."
   },
   {
-    "course_id": 007,
+    "course_id": 7,
     "eligibility": "Passed Bachelor Degree of Minimum 3 years duration with at least 50% marks (45% in case of candidates belonging to reserved category)."
   }
 ]

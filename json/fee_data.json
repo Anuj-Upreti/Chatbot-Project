@@ -1,5 +1,3 @@
-// json/fee_data.json
-
 [
   {
     "course_id": 1,
@@ -10,23 +8,23 @@
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "course_id": 003,
+    "course_id": 3,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "course_id": 004,
+    "course_id": 4,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "course_id": 005,
+    "course_id": 5,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "course_id": 006,
+    "course_id": 6,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "course_id": 007,
+    "course_id": 7,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   }
 ]
