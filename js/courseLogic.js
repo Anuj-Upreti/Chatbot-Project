@@ -36,6 +36,7 @@ loadCourseData();
 
 function handleCourseQuery(userInput) {
     const cleanedInput = userInput.toLowerCase();
+     console.log("handleCourseQuery: Cleaned user input:", cleanedInput); // NEW DEBUG LOG
 
     // Ensure data is loaded before trying to access it
     if (courseNames.length === 0) {
@@ -44,29 +45,28 @@ function handleCourseQuery(userInput) {
     }
 
     for (const course of courseNames) {
-        // Ensure course_id consistency
-        // Make sure your JSON files actually use "course_id" now
-        // Assuming your JSON data for course_name.json has a 'course_id' field.
         const courseId = course.course_id; 
-
+  console.log(`handleCourseQuery: Checking course primary name: "${course['primary name']}" (ID: ${courseId})`); // NEW DEBUG LOG
         for (let i = 1; i <= 5; i++) {
             const nameVariant = course[`name_${i}`]?.toLowerCase();
             if (nameVariant && cleanedInput.includes(nameVariant)) {
+                 console.log(`  MATCH FOUND for variant "${nameVariant}". Returning courseId: ${courseId}`); // NEW DEBUG LOG
                 return courseId;
             }
         }
 
         const primaryName = course['primary name'].toLowerCase();
+        console.log(`  Checking primary name: "${primaryName}"`); // NEW DEBUG LOG
         if (cleanedInput.includes(primaryName)) {
+        console.log(`  MATCH FOUND for primary name "${primaryName}". Returning courseId: ${courseId}`); // NEW DEBUG LOG
             return courseId;
         }
     }
-
+    console.log("handleCourseQuery: No course match found for input."); // NEW DEBUG LOG 
     return null;
 }
 
-function generateCourseResponse(intent, courseId) { // Changed fee_id to courseId
-    // Ensure data is loaded before trying to access it
+function generateCourseResponse(intent, courseId) { 
     if (feeData.length === 0 || eligibilityData.length === 0) {
         console.warn("Fee or eligibility data not yet loaded for generateCourseResponse.");
         return "Information is not yet available. Please try again in a moment.";
@@ -91,7 +91,7 @@ function getPrimaryCourseName(courseId) { // Changed fee_id to courseId
         console.warn("Course names data not yet loaded for getPrimaryCourseName.");
         return "this course";
     }
-    const course = courseNames.find(c => c.course_id === courseId); // Changed fee_id to course_id
+    const course = courseNames.find(c => c.course_id === courseId); 
     return course ? course["primary name"] : "this course";
 }
 
