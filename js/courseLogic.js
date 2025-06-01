@@ -11,35 +11,35 @@ function handleCourseQuery(userInput) {
     for (let i = 1; i <= 5; i++) {
       const nameVariant = course[`name_${i}`]?.toLowerCase();
       if (nameVariant && cleanedInput.includes(nameVariant)) {
-        return course.fee_id;
+        return course.course_id;
       }
     }
 
     const primaryName = course['primary name'].toLowerCase();
     if (cleanedInput.includes(primaryName)) {
-      return course.fee_id;
+      return course.course_id;
     }
   }
 
   return null;
 }
 
-function generateCourseResponse(intent, fee_id) {
+function generateCourseResponse(intent, course_id) {
   if (intent === 'course_fees') {
-    const feeObj = feeData.find(item => item.fee_id === fee_id);
-    return feeObj ? `The fee for ${getPrimaryCourseName(fee_id)} is ${feeObj.fee}.` : "Fee information is not available.";
+    const feeObj = feeData.find(item => item.course_id === course_id);
+    return feeObj ? `The fee for ${getPrimaryCourseName(course_id)} is ${feeObj.fee}.` : "Fee information is not available.";
   }
 
   if (intent === 'eligibility') {
-    const eligibilityObj = eligibilityData.find(item => item.fee_id === fee_id);
-    return eligibilityObj ? `Eligibility for ${getPrimaryCourseName(fee_id)}: ${eligibilityObj.eligibility}` : "Eligibility details are not available.";
+    const eligibilityObj = eligibilityData.find(item => item.course_id === course_id);
+    return eligibilityObj ? `Eligibility for ${getPrimaryCourseName(course_id)}: ${eligibilityObj.eligibility}` : "Eligibility details are not available.";
   }
 
   return "No information available.";
 }
 
-function getPrimaryCourseName(fee_id) {
-  const course = courseNames.find(c => c.fee_id === fee_id);
+function getPrimaryCourseName(course_id) {
+  const course = courseNames.find(c => c.course_id === course_id);
   return course ? course["primary name"] : "this course";
 }
 
