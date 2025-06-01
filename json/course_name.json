@@ -1,6 +1,6 @@
 [
   {
-    "fee_id": 1,
+    "course_id": 1,
     "primary name": "MA Political Science",
     "name_1": "MPS",
     "name_2": "Master of Arts Political Science",
@@ -9,7 +9,7 @@
     "name_5": ""
   },
   {
-    "fee_id": 2,
+    "course_id": 2,
     "primary name": "Master of Business Administration",
     "name_1": "MBA",
     "name_2": "Buiness Administration",
@@ -18,7 +18,7 @@
     "name_5": ""
   },
   {
-    "fee_id": 2,
+    "course_id": 2,
     "primary name": "Master of Business Administration Human Resource Management",
     "name_1": "MBAHM",
     "name_2": "HRM MBA",
@@ -27,7 +27,7 @@
     "name_5": ""
   },
   {
-    "fee_id": 3,
+    "course_id": 3,
     "primary name": "Master of Business Administration Financial Management",
     "name_1": "MBAFM",
     "name_2": "FM MBA",
@@ -36,7 +36,7 @@
     "name_5": ""
   },
   {
-    "fee_id": 4,
+    "course_id": 4,
     "primary name": "Master of Business Administration Operations Management",
     "name_1": "MBAOM",
     "name_2": "MBA OM",
@@ -45,7 +45,7 @@
     "name_5": ""
   },
   {
-    "fee_id": 5,
+    "course_id": 5,
     "primary name": "Master of Business Administration Marketing Management",
     "name_1": "MBAMM",
     "name_2": "MBA Marketing",
@@ -54,7 +54,7 @@
     "name_5": ""
   },
   {
-    "fee_id": 6,
+    "course_id": 6,
     "primary name": "Master of Business Administration Banking and Finance",
     "name_1": "MBF",
     "name_2": "Banking MBA",

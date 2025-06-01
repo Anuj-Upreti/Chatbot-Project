@@ -27,15 +27,20 @@ function handleCourseQuery(userInput) {
 function generateCourseResponse(intent, fee_id) {
   if (intent === 'course_fees') {
     const feeObj = feeData.find(item => item.fee_id === fee_id);
-    return feeObj ? `The fee for this course is ${feeObj.fee}.` : "Fee information is not available.";
+    return feeObj ? `The fee for ${getPrimaryCourseName(fee_id)} is ${feeObj.fee}.` : "Fee information is not available.";
   }
 
   if (intent === 'eligibility') {
     const eligibilityObj = eligibilityData.find(item => item.fee_id === fee_id);
-    return eligibilityObj ? `Eligibility: ${eligibilityObj.eligibility}` : "Eligibility details are not available.";
+    return eligibilityObj ? `Eligibility for ${getPrimaryCourseName(fee_id)}: ${eligibilityObj.eligibility}` : "Eligibility details are not available.";
   }
 
   return "No information available.";
 }
 
-export { handleCourseQuery, generateCourseResponse };
+function getPrimaryCourseName(fee_id) {
+  const course = courseNames.find(c => c.fee_id === fee_id);
+  return course ? course["primary name"] : "this course";
+}
+
+export { handleCourseQuery, generateCourseResponse, getPrimaryCourseName };

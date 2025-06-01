@@ -1,30 +1,30 @@
 [
   {
-    "fee_id": 1,
+    "course_id": 1,
     "fee": "Rs. 7,700 per year"
   },
   {
-    "fee_id": 2,
+    "course_id": 2,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "fee_id": 2,
+    "course_id": 2,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "fee_id": 3,
+    "course_id": 3,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "fee_id": 4,
+    "course_id": 4,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "fee_id": 5,
+    "course_id": 5,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   },
   {
-    "fee_id": 6,
+    "course_id": 6,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
   }
 ]

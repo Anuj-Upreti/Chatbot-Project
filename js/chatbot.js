@@ -1,38 +1,43 @@
 // js/chatbot.js
 
+import { botData } from './botData.js';
+import { getTodayDate, getRandomGreeting } from './utils.js';
 import { displayUserMessage, displayBotMessage } from './functions.js'; 
 import { detectIntent } from './intentMatcher.js';
-import { handleCourseQuery, generateCourseResponse } from './courseLogic.js';
+import { handleCourseQuery, generateCourseResponse, getPrimaryCourseName } from './courseLogic.js';
 
-let currentCourseId = 1; // Default to MA Political Science
+let currentCourseId = 'MA-01';  // Default to MA Political Science
+let currentCourseName = 'MA Political Science'; // Used in static replies
 
 function handleUserInput(userInput) {
   const cleanedInput = userInput.trim().toLowerCase();
-  let response = "Sorry, I didn’t understand that. Please select an option or check available courses.";
+  displayUserMessage(userInput);
 
-  // Check for course name and update fee_id if found
+  // Check if user mentioned a different course
   const newCourseId = handleCourseQuery(cleanedInput);
-  if (newCourseId) {
+  if (newCourseId && newCourseId !== currentCourseId) {
     currentCourseId = newCourseId;
+    currentCourseName = getPrimaryCourseName(currentCourseId);
   }
 
   const intent = detectIntent(cleanedInput);
+  let response = "Sorry, I didn’t understand that. Please select an option or check available courses.";
 
   if (intent) {
-    if (['course_fees', 'eligibility'].includes(intent)) {
+    if (intent === 'course_fees' || intent === 'eligibility') {
       response = generateCourseResponse(intent, currentCourseId);
     } else {
       switch (intent) {
         case 'admission_fees':
-          response = "MA Political Science admission fee is Rs. 3,850/- plus the university development fee of Rs. 200/-.";
+          response = `${currentCourseName} admission fee is Rs. 3,850/- plus the university development fee of Rs. 200/-.`;
           break;
 
         case 'exam_fees':
           response = "To appear in the exam pay a fee of Rs. 200/- per theory subject and Rs. 300/- per practical subject.";
-          break;
+          break;        
 
         case 'process':
-          response = "To apply, register on the IGNOU Samarth portal to create an account. Then complete the student login to fill the form and pay the application fee.";
+          response = "To apply, register on the IGNOU Samarth portal to create an account. After that, complete the student login to fill the form and pay the application fee.";
           break;
 
         case 'start_dates':
@@ -50,7 +55,6 @@ function handleUserInput(userInput) {
     }
   }
 
-  displayUserMessage(userInput);
   displayBotMessage(response);
 }
 
