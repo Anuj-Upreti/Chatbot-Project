@@ -17,6 +17,7 @@ async function loadCourseData() {
         courseNames = await namesResponse.json();
         eligibilityData = await eligibilityResponse.json();
         feeData = await feeResponse.json();
+        console.log("DEBUG: feeData content after loading:", feeData);
 
         console.log("Course data loaded successfully!");
         // console.log("courseNames:", courseNames); // For debugging
@@ -46,7 +47,7 @@ function handleCourseQuery(userInput) {
 
     for (const course of courseNames) {
         const courseId = course.course_id; 
-  console.log(`handleCourseQuery: Checking course primary name: "${course['primary name']}" (ID: ${courseId})`); // NEW DEBUG LOG
+        console.log(`handleCourseQuery: Checking course primary name: "${course['primary name']}" (ID: ${courseId})`); // NEW DEBUG LOG
         for (let i = 1; i <= 5; i++) {
             const nameVariant = course[`name_${i}`]?.toLowerCase();
             if (nameVariant && cleanedInput.includes(nameVariant)) {
@@ -67,13 +68,18 @@ function handleCourseQuery(userInput) {
 }
 
 function generateCourseResponse(intent, courseId) { 
+    console.log("DEBUG: generateCourseResponse called with intent:", intent, "and courseId:", courseId, " (type:", typeof courseId, ")");
     if (feeData.length === 0 || eligibilityData.length === 0) {
         console.warn("Fee or eligibility data not yet loaded for generateCourseResponse.");
         return "Information is not yet available. Please try again in a moment.";
     }
 
     if (intent === 'course_fees') {
-        const feeObj = feeData.find(item => item.course_id === courseId); // Changed fee_id to course_id
+        const feeObj = feeData.find(item => {
+          console.log("DEBUG: Comparing fee item.course_id:", item.course_id, "(type:", typeof item.course_id, ") with search courseId:", courseId, "(type:", typeof courseId, ")");
+            return item.course_id === courseId;
+             }
+        ); // Changed fee_id to course_id
         return feeObj ? `The fee for ${getPrimaryCourseName(courseId)} is ${feeObj.fee}.` : "Fee information is not available.";
     }
 
