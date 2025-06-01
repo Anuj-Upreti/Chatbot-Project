@@ -1,6 +1,6 @@
 // js/chatbot.js
 
-import { botData } from './botData.js';
+//import { botData } from './botData.js';
 import { getTodayDate, getRandomGreeting } from './utils.js';
 import { displayUserMessage, displayBotMessage } from './functions.js'; 
 import { detectIntent } from './intentMatcher.js';
