@@ -75,6 +75,10 @@ function generateCourseResponse(intent, courseId) {
     }
 
     if (intent === 'course_fees') {
+        if (courseId === 0) {
+         return "IGNOU course fee ranges between Rs. 1,200/- to Rs. 30,000/- per year depending on the course. Do you have a course in mind?.";
+        }
+
         const feeObj = feeData.find(item => {
           console.log("DEBUG: Comparing fee item.course_id:", item.course_id, "(type:", typeof item.course_id, ") with search courseId:", courseId, "(type:", typeof courseId, ")");
             return item.course_id === courseId;
@@ -84,6 +88,9 @@ function generateCourseResponse(intent, courseId) {
     }
 
     if (intent === 'eligibility') {
+         if (courseId === 0) {
+           return "Eligibility for UG admission is a 12th class. PG admission require bachelor's degree. And, Certificate & Diploma courses accept 10th pass to Graduates students.";
+        }
         const eligibilityObj = eligibilityData.find(item => item.course_id === courseId); // Changed fee_id to course_id
         return eligibilityObj ? `Eligibility for ${getPrimaryCourseName(courseId)}: ${eligibilityObj.eligibility}` : "Eligibility details are not available.";
     }
