@@ -1,7 +1,7 @@
 [
   {
     "course_id": 1,
-    "fee": "Rs. 7,700 per year"
+    "fee": "Rs. 9,700 /- per year Total = Rs. 19,400/-*"
   },
   {
     "course_id": 2,
@@ -26,5 +26,1265 @@
   {
     "course_id": 7,
     "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
+  },
+  {
+    "course_id": 8,
+    "fee": "Rs. 7,700 /- per year Total = Rs. 15,400/-*"
+  },
+  {
+    "course_id": 9,
+    "fee": "Rs. 7,700 /- per year Total = Rs. 15,400/-*"
+  },
+  {
+    "course_id": 10,
+    "fee": "Rs. 7,700 /- per year Total = Rs. 15,400/-*"
+  },
+  {
+    "course_id": 11,
+    "fee": "Rs. 7,700 /- per year Total = Rs. 15,400/-*"
+  },
+  {
+    "course_id": 12,
+    "fee": "Rs. 7,300 /- per year Total = Rs. 14,600/-*"
+  },
+  {
+    "course_id": 13,
+    "fee": "Rs. 10,000 /- per year Total = Rs. 20,000/-*"
+  },
+  {
+    "course_id": 14,
+    "fee": "Rs. 9,200 /- per year Total = Rs. 18,400/-*"
+  },
+  {
+    "course_id": 15,
+    "fee": "Rs. 7,700 /- per year Total = Rs. 15,400/-*"
+  },
+  {
+    "course_id": 16,
+    "fee": "Rs. 11,500/-*Full prog."
+  },
+  {
+    "course_id": 17,
+    "fee": "Rs. 9,300 /- per year Total = Rs. 18,600/-*"
+  },
+  {
+    "course_id": 18,
+    "fee": "Rs. 6,200 /- per year Total = Rs. 12,400/-*"
+  },
+  {
+    "course_id": 19,
+    "fee": "Rs. 12,700/- per semester. (MCS-201 ,MCS-208 @Rs.1,000/- per course as additional fee as per the eligibility) Total=Rs. 50,800/-*"
+  },
+  {
+    "course_id": 20,
+    "fee": "Rs. 7,000 /- per year Total = Rs. 14,000/-*"
+  },
+  {
+    "course_id": 21,
+    "fee": "Rs. 17,000/- per year Total = Rs. 34,000/-* (Fee for CFN/CNCC, if any, will be additional)"
+  },
+  {
+    "course_id": 22,
+    "fee": "Rs. 17,500 /- per year Total = Rs. 35,000/-*"
+  },
+  {
+    "course_id": 23,
+    "fee": "Rs. 14,000 /-"
+  },
+  {
+    "course_id": 24,
+    "fee": "Rs. 18,000/- per year Total = Rs. 36000/-*"
+  },
+  {
+    "course_id": 25,
+    "fee": "Rs. 18,000/- per year Total = Rs. 36000/-*"
+  },
+  {
+    "course_id": 26,
+    "fee": "Rs. 9,700/- per year Total = Rs. 19,400/-*"
+  },
+  {
+    "course_id": 27,
+    "fee": "Rs. 6,500/- per year Total = Rs. 13,000/-*"
+  },
+  {
+    "course_id": 28,
+    "fee": "Rs. 8,000/- per year Total = Rs. 16,000/-*"
+  },
+  {
+    "course_id": 29,
+    "fee": "Category-I : Rs. 7,500/- per year Total = Rs. 15,000/-* Category-II :Rs. 10,500/- for 1st year and Rs. 7,500/- for 2nd year. Total = Rs. 18,000/-*"
+  },
+  {
+    "course_id": 30,
+    "fee": "Rs. 7,500/- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 31,
+    "fee": "Rs. 6,500/- per year Total = Rs. 13,000/-*"
+  },
+  {
+    "course_id": 32,
+    "fee": "Rs. 7,700/- per year Total = Rs. 15,400/-*"
+  },
+  {
+    "course_id": 33,
+    "fee": "Rs. 7,400/- per year Total = Rs. 14,800/-*"
+  },
+  {
+    "course_id": 34,
+    "fee": "Rs. 6,000/- per year Total = Rs. 12,000/-*"
+  },
+  {
+    "course_id": 35,
+    "fee": "Rs. 7,400/- per year Total = Rs. 14,800/-*"
+  },
+  {
+    "course_id": 36,
+    "fee": "Rs. 6,200/- per year Total = Rs. 12,400/-*"
+  },
+  {
+    "course_id": 37,
+    "fee": "Rs. 6,200/- per year Total = Rs. 12,400/-*"
+  },
+  {
+    "course_id": 38,
+    "fee": "Rs. 7,100/- per semester Total = Rs. 28,400/-*"
+  },
+  {
+    "course_id": 39,
+    "fee": "Rs. 7,700/- per semester Total = Rs. 30,800/-*"
+  },
+  {
+    "course_id": 40,
+    "fee": "Rs. 14,000/- per year Total = Rs. 28,000/-*"
+  },
+  {
+    "course_id": 41,
+    "fee": "Rs. 14,000 /- per year Total = Rs. 28,000/-*"
+  },
+  {
+    "course_id": 42,
+    "fee": "Rs. 15,700 /- per year Total = Rs. 31,400/-*"
+  },
+  {
+    "course_id": 43,
+    "fee": "Rs. 14,200 /- per year Total = Rs. 28,400/-* (Pro rata fee for lateral entrants into Second Year)"
+  },
+  {
+    "course_id": 44,
+    "fee": "Rs. 36,200 /- per year Total = Rs. 72,400/-*"
+  },
+  {
+    "course_id": 45,
+    "fee": "Rs. 23,300 /- per year Total = Rs. 46,600/-*"
+  },
+  {
+    "course_id": 46,
+    "fee": "Rs. 20,200 /- per year Total = Rs. 40,400/-*"
+  },
+  {
+    "course_id": 47,
+    "fee": "Rs. 12,200/- per year Total = Rs. 24,400/-*"
+  },
+  {
+    "course_id": 48,
+    "fee": "Rs.12,100/- * I st year & Rs.12,900/- * II nd year"
+  },
+  {
+    "course_id": 49,
+    "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
+  },
+  {
+    "course_id": 50,
+    "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester*"
+  },
+  {
+    "course_id": 51,
+    "fee": "Rs. 13,200/- *per year (English & Hindi) Total = Rs. 26,400/-* and Tamil Regional Language medium Rs.6000/-* Per year"
+  },
+  {
+    "course_id": 52,
+    "fee": "Rs. 6,000/- *per year Total = Rs.12,000/-"
+  },
+  {
+    "course_id": 53,
+    "fee": "Rs. 10,000/- per year Total = Rs. 20,000/-*"
+  },
+  {
+    "course_id": 54,
+    "fee": "Rs. 12,500/- per year Total = Rs. 25,000/-*"
+  },
+  {
+    "course_id": 55,
+    "fee": "Rs. 10,000/- per year Total = Rs. 20,000/-*"
+  },
+  {
+    "course_id": 56,
+    "fee": "Rs. 6,800/- per year Total = Rs. 13,600/-*"
+  },
+  {
+    "course_id": 57,
+    "fee": "Rs. 6,100/- per year Total = Rs. 12,200/-*"
+  },
+  {
+    "course_id": 58,
+    "fee": "Rs. 6,100/- per year Total = Rs. 12,200/-*"
+  },
+  {
+    "course_id": 59,
+    "fee": "Rs. 7,000/- per year Total = Rs. 14,000/-*"
+  },
+  {
+    "course_id": 60,
+    "fee": "Rs. 6,800/- per year Total = Rs. 13,600/-*"
+  },
+  {
+    "course_id": 61,
+    "fee": "Rs. 7,000/- per year Total = Rs. 14,000/-*"
+  },
+  {
+    "course_id": 62,
+    "fee": "Rs. 7,000/- per year Total = Rs. 14,000/-*"
+  },
+  {
+    "course_id": 63,
+    "fee": "Rs. 6,300/- per year Total = Rs. 12,600/-*"
+  },
+  {
+    "course_id": 64,
+    "fee": "Rs. 13,000/- per year Total = Rs. 26,000/-*"
+  },
+  {
+    "course_id": 65,
+    "fee": "Rs. 15,500 /- for I,II,& IV semester* and Rs.17,500/- for III semester* 3rd Semester has an 08 credit project)"
+  },
+  {
+    "course_id": 66,
+    "fee": "Rs. 8,200/- per year Total = Rs. 16,400/-*"
+  },
+  {
+    "course_id": 67,
+    "fee": "Rs. 5,800/- per year Total = Rs. 11,600/-*"
+  },
+  {
+    "course_id": 68,
+    "fee": "Rs. 6,600/- per year Total = Rs. 13,200/-*"
+  },
+  {
+    "course_id": 69,
+    "fee": "Rs. 7,200/- per year Total = Rs. 14,400/-*"
+  },
+  {
+    "course_id": 70,
+    "fee": "Rs. 6,000/- per year Total = Rs. 12,000/-*"
+  },
+  {
+    "course_id": 71,
+    "fee": "Rs. 6,000/- per year Total = Rs. 12,000/-*"
+  },
+  {
+    "course_id": 72,
+    "fee": "Rs. 8,500/- per year Total = Rs. 17,000/-*"
+  },
+  {
+    "course_id": 73,
+    "fee": "Rs. 21600/- Per Year Total= Rs. 43200/-*"
+  },
+  {
+    "course_id": 74,
+    "fee": "Rs.7,500/- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 75,
+    "fee": "Rs. 5,900/- per year Total = Rs. 11,800/- *"
+  },
+  {
+    "course_id": 76,
+    "fee": "Rs. 5,900/- per year Total = Rs. 11,800/- *"
+  },
+  {
+    "course_id": 77,
+    "fee": "Rs. 6,500/- per year Total =Rs.13,000/-*"
+  },
+  {
+    "course_id": 78,
+    "fee": "Rs. 8,000/- per year Total =Rs.16,000/-*"
+  },
+  {
+    "course_id": 79,
+    "fee": "Rs. 15,500 /- for 1st,& 2nd semester* Rs.19,500/- for 3rd semester and Rs.17,500/- for 4th semester*"
+  },
+  {
+    "course_id": 80,
+    "fee": "Rs. 4,500/- per year*"
+  },
+  {
+    "course_id": 81,
+    "fee": "Rs. 6,000/- per year*"
+  },
+  {
+    "course_id": 82,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 83,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 84,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 85,
+    "fee": "Rs. 5,500/- per year*"
+  },
+  {
+    "course_id": 86,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 87,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 88,
+    "fee": "Rs. 6,300/- per year*"
+  },
+  {
+    "course_id": 89,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 90,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 91,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 92,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 93,
+    "fee": "Rs. 4,500/- per year*"
+  },
+  {
+    "course_id": 94,
+    "fee": "Rs.14,500/- per year*"
+  },
+  {
+    "course_id": 95,
+    "fee": "Rs. 6,300/- per year*"
+  },
+  {
+    "course_id": 96,
+    "fee": "Rs.10,500 /- per year*"
+  },
+  {
+    "course_id": 97,
+    "fee": "Rs. 5,000/- per year*"
+  },
+  {
+    "course_id": 98,
+    "fee": "Rs. 10,600/- per year*"
+  },
+  {
+    "course_id": 99,
+    "fee": "Rs. 5,100 /- per year Total = Rs. 15,300/-*"
+  },
+  {
+    "course_id": 100,
+    "fee": "Rs. 6,000 /- per year Total = Rs. 18,000/-*"
+  },
+  {
+    "course_id": 101,
+    "fee": "Rs. 9,200 /- per year Total = Rs. 27,600/-*"
+  },
+  {
+    "course_id": 102,
+    "fee": "Rs. 6,000 /- per year Total = Rs. 18,000/-*"
+  },
+  {
+    "course_id": 103,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 104,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 105,
+    "fee": "Rs. 6,600 /- per year Total = Rs. 13,200/-*"
+  },
+  {
+    "course_id": 106,
+    "fee": "Rs. 20,000/- per year*"
+  },
+  {
+    "course_id": 107,
+    "fee": "Rs.10,500 /- per year Total = Rs. 31,500/-*"
+  },
+  {
+    "course_id": 108,
+    "fee": "Rs.10,000/- per year Total=Rs. 30,000/-*"
+  },
+  {
+    "course_id": 109,
+    "fee": "Rs. 7,200 /- per year Total = Rs. 21,600/-*"
+  },
+  {
+    "course_id": 110,
+    "fee": "Rs. 8,000/- per semester Total=Rs. 48,000/-*"
+  },
+  {
+    "course_id": 111,
+    "fee": "Rs. 8,700/-*"
+  },
+  {
+    "course_id": 112,
+    "fee": "Rs. 4,000 /- per year Total = Rs. 12,000/-*"
+  },
+  {
+    "course_id": 113,
+    "fee": "Rs. 4,800 /- per year Total = Rs. 14,400/-*"
+  },
+  {
+    "course_id": 114,
+    "fee": "Rs. 4,800 /- per year Total = Rs. 14,400/-*"
+  },
+  {
+    "course_id": 115,
+    "fee": "Rs. 4,800 /- per year Total = Rs. 14,400/-*"
+  },
+  {
+    "course_id": 116,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 117,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 118,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 119,
+    "fee": "Rs. 5,500 + 600/- Practical fee per year Total = Rs. 16,500 +1800= 18,300/-*"
+  },
+  {
+    "course_id": 120,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 121,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 122,
+    "fee": "Rs. 6,300 /- per year Total = Rs. 18,900/-*"
+  },
+  {
+    "course_id": 123,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 124,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 125,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 126,
+    "fee": "Rs. 5,000 /- per year Total = Rs. 15,000/-*"
+  },
+  {
+    "course_id": 127,
+    "fee": "Rs. 14,500 /- per year Total = Rs. 43,500/-*"
+  },
+  {
+    "course_id": 128,
+    "fee": "Rs. 2,400/-*"
+  },
+  {
+    "course_id": 129,
+    "fee": "Rs. 16,800/- *"
+  },
+  {
+    "course_id": 130,
+    "fee": "Rs. 10,800/- *"
+  },
+  {
+    "course_id": 131,
+    "fee": "Rs. 4,000/-*"
+  },
+  {
+    "course_id": 132,
+    "fee": "Rs. 5,100/-*"
+  },
+  {
+    "course_id": 133,
+    "fee": "Rs. 8,200/-*"
+  },
+  {
+    "course_id": 134,
+    "fee": "Rs.7,600/-*"
+  },
+  {
+    "course_id": 135,
+    "fee": "Rs. 7,000/-*"
+  },
+  {
+    "course_id": 136,
+    "fee": "Rs. 9,600/-*"
+  },
+  {
+    "course_id": 137,
+    "fee": "Rs.15,700/-*"
+  },
+  {
+    "course_id": 138,
+    "fee": "Rs. 9,000/-*"
+  },
+  {
+    "course_id": 139,
+    "fee": "Rs.18,000/- *"
+  },
+  {
+    "course_id": 140,
+    "fee": "Rs.4,200/-*"
+  },
+  {
+    "course_id": 141,
+    "fee": "Rs.7,400/-*"
+  },
+  {
+    "course_id": 142,
+    "fee": "Rs.20,000/-**Full prog.fee"
+  },
+  {
+    "course_id": 143,
+    "fee": "Rs. 3,000/-*"
+  },
+  {
+    "course_id": 144,
+    "fee": "Rs. 6,600/-*"
+  },
+  {
+    "course_id": 145,
+    "fee": "Rs. 6,000/-*"
+  },
+  {
+    "course_id": 146,
+    "fee": "Rs. 7,000/-*"
+  },
+  {
+    "course_id": 147,
+    "fee": "Rs. 9,600/-*"
+  },
+  {
+    "course_id": 148,
+    "fee": "Rs. 6,000/-*"
+  },
+  {
+    "course_id": 149,
+    "fee": "Rs. 5,400/-*"
+  },
+  {
+    "course_id": 150,
+    "fee": "Rs. 7000/-*"
+  },
+  {
+    "course_id": 151,
+    "fee": "Rs.12,500/-*(English & Hindi ) and Tamil Regional Language medium Rs.6000/-* Per year"
+  },
+  {
+    "course_id": 152,
+    "fee": "Rs.6000/-*"
+  },
+  {
+    "course_id": 153,
+    "fee": "Rs. 12,000/- *"
+  },
+  {
+    "course_id": 154,
+    "fee": "Rs. 10,000/- *"
+  },
+  {
+    "course_id": 155,
+    "fee": "Rs. 10,000/- *"
+  },
+  {
+    "course_id": 156,
+    "fee": "Rs. 9,500/-*"
+  },
+  {
+    "course_id": 157,
+    "fee": "Rs. 8,000/-*"
+  },
+  {
+    "course_id": 158,
+    "fee": "Rs.14,400/-*"
+  },
+  {
+    "course_id": 159,
+    "fee": "Rs. 7,100/-*"
+  },
+  {
+    "course_id": 160,
+    "fee": "Rs.10,800/- per semester Total= Rs.21,600/-*"
+  },
+  {
+    "course_id": 161,
+    "fee": "Rs. 8,400/-*"
+  },
+  {
+    "course_id": 162,
+    "fee": "Rs.10,200/- *"
+  },
+  {
+    "course_id": 163,
+    "fee": "Rs.10,800/- *"
+  },
+  {
+    "course_id": 164,
+    "fee": "Rs. 6,600/-*"
+  },
+  {
+    "course_id": 165,
+    "fee": "Rs. 2,700/-*"
+  },
+  {
+    "course_id": 166,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 167,
+    "fee": "Rs.6,100/-*"
+  },
+  {
+    "course_id": 168,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 169,
+    "fee": "Rs.6,000/-*"
+  },
+  {
+    "course_id": 170,
+    "fee": "Rs.7,300/-*"
+  },
+  {
+    "course_id": 171,
+    "fee": "Rs. 7,200/-*"
+  },
+  {
+    "course_id": 172,
+    "fee": "Rs.9,000/-*"
+  },
+  {
+    "course_id": 173,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 174,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 175,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 176,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 177,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 178,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 179,
+    "fee": "Rs.6,700/-*"
+  },
+  {
+    "course_id": 180,
+    "fee": "Rs. 15,000/- *"
+  },
+  {
+    "course_id": 181,
+    "fee": "Rs. 26,400/-**"
+  },
+  {
+    "course_id": 182,
+    "fee": "Rs. 30,000/-**"
+  },
+  {
+    "course_id": 183,
+    "fee": "Rs.10800/- per semester. Non-Maths students have to pay Rs.1000/- additional in the first semester. Total= Rs. 21,600/- *"
+  },
+  {
+    "course_id": 184,
+    "fee": "Rs. 6,000/-*"
+  },
+  {
+    "course_id": 185,
+    "fee": "Rs. 20,000/- Total *"
+  },
+  {
+    "course_id": 186,
+    "fee": "Rs. 20,000/- Total *"
+  },
+  {
+    "course_id": 187,
+    "fee": "Rs. 20,000/- Total *"
+  },
+  {
+    "course_id": 188,
+    "fee": "Rs. 20,000/- Total *"
+  },
+  {
+    "course_id": 189,
+    "fee": "Rs. 10,000/- per semester and Rs. 20,000/- Total *"
+  },
+  {
+    "course_id": 190,
+    "fee": "Rs. 5,400/- *"
+  },
+  {
+    "course_id": 191,
+    "fee": "Rs. 5,800/- *"
+  },
+  {
+    "course_id": 192,
+    "fee": "Rs. 7,200/- *"
+  },
+  {
+    "course_id": 193,
+    "fee": "Rs. 12,100/- * & Lateral Entry in second year Rs.6,100/-*"
+  },
+  {
+    "course_id": 194,
+    "fee": "Rs. 5,000/-*"
+  },
+  {
+    "course_id": 195,
+    "fee": "Rs. 3,000/-*"
+  },
+  {
+    "course_id": 196,
+    "fee": "Rs. 3,000/-*"
+  },
+  {
+    "course_id": 197,
+    "fee": "Rs. 3,600/-*"
+  },
+  {
+    "course_id": 198,
+    "fee": "Rs. 8,000/-*"
+  },
+  {
+    "course_id": 199,
+    "fee": "Rs. 6,500/-*"
+  },
+  {
+    "course_id": 200,
+    "fee": "Rs. 4,000/-* (IGNOU), Rs.8000/- (NSDC for Skill component to be paid directly to NSDC)"
+  },
+  {
+    "course_id": 201,
+    "fee": "Rs.4,500/-*"
+  },
+  {
+    "course_id": 202,
+    "fee": "Rs.3,800/-*"
+  },
+  {
+    "course_id": 203,
+    "fee": "Rs. 1,800/-*"
+  },
+  {
+    "course_id": 204,
+    "fee": "Rs. 15,200/- *"
+  },
+  {
+    "course_id": 205,
+    "fee": "Rs. 14,400/- *"
+  },
+  {
+    "course_id": 206,
+    "fee": "Rs. 12,000/- *"
+  },
+  {
+    "course_id": 207,
+    "fee": "Rs. 14,400/- *"
+  },
+  {
+    "course_id": 208,
+    "fee": "Rs.3,800/-*"
+  },
+  {
+    "course_id": 209,
+    "fee": "Rs.6,200/-*"
+  },
+  {
+    "course_id": 210,
+    "fee": "Rs.3,600/-*"
+  },
+  {
+    "course_id": 211,
+    "fee": "Rs.1,500/-*"
+  },
+  {
+    "course_id": 212,
+    "fee": "Rs. 5,000/- per Semester Total=Rs. 10,000/- *"
+  },
+  {
+    "course_id": 213,
+    "fee": "Rs. 4,500/-*"
+  },
+  {
+    "course_id": 214,
+    "fee": "Rs. 10,000/-*"
+  },
+  {
+    "course_id": 215,
+    "fee": "Rs.8,400/-*"
+  },
+  {
+    "course_id": 216,
+    "fee": "Rs.7,800/-*"
+  },
+  {
+    "course_id": 217,
+    "fee": "Rs 10,000/-*"
+  },
+  {
+    "course_id": 218,
+    "fee": "Rs.7,000/-*"
+  },
+  {
+    "course_id": 219,
+    "fee": "Rs.10,800/-**"
+  },
+  {
+    "course_id": 220,
+    "fee": "Rs.6,000/-*"
+  },
+  {
+    "course_id": 221,
+    "fee": "Rs. 7,700/-*"
+  },
+  {
+    "course_id": 222,
+    "fee": "Rs. 4,000/-*"
+  },
+  {
+    "course_id": 223,
+    "fee": "Rs. 10,000/-*"
+  },
+  {
+    "course_id": 224,
+    "fee": "Rs. 8,400/-*"
+  },
+  {
+    "course_id": 225,
+    "fee": "Rs.9,600/-*"
+  },
+  {
+    "course_id": 226,
+    "fee": "Rs. 3800/-*"
+  },
+  {
+    "course_id": 227,
+    "fee": "Rs.6000/-*"
+  },
+  {
+    "course_id": 228,
+    "fee": "Rs.5,500/-*"
+  },
+  {
+    "course_id": 229,
+    "fee": "Rs.3,600/-*"
+  },
+  {
+    "course_id": 230,
+    "fee": "Rs.2,400/-*"
+  },
+  {
+    "course_id": 231,
+    "fee": "Rs 6,000/-*"
+  },
+  {
+    "course_id": 232,
+    "fee": "Rs.1,800/-*"
+  },
+  {
+    "course_id": 233,
+    "fee": "Rs.1,800/-*"
+  },
+  {
+    "course_id": 234,
+    "fee": "Rs.3000/-*"
+  },
+  {
+    "course_id": 235,
+    "fee": "Rs. 5,500/-**"
+  },
+  {
+    "course_id": 236,
+    "fee": "Rs. 6,000/-*"
+  },
+  {
+    "course_id": 237,
+    "fee": "Rs. 6,000/-*"
+  },
+  {
+    "course_id": 238,
+    "fee": "Rs. 3000/-*"
+  },
+  {
+    "course_id": 239,
+    "fee": "Rs. 2,600/-*"
+  },
+  {
+    "course_id": 240,
+    "fee": "Rs.2,400/-*"
+  },
+  {
+    "course_id": 241,
+    "fee": "Rs.1000/-*"
+  },
+  {
+    "course_id": 242,
+    "fee": "Rs. 3500/-*"
+  },
+  {
+    "course_id": 243,
+    "fee": "Rs. 1,900/-*"
+  },
+  {
+    "course_id": 244,
+    "fee": "Rs. 2,400/-*"
+  },
+  {
+    "course_id": 245,
+    "fee": "Rs. 1,800/-*"
+  },
+  {
+    "course_id": 246,
+    "fee": "Rs. 3000/-*"
+  },
+  {
+    "course_id": 247,
+    "fee": "Rs. 7,800/-**"
+  },
+  {
+    "course_id": 248,
+    "fee": "Rs. 7,800/-**"
+  },
+  {
+    "course_id": 249,
+    "fee": "Rs. 7,800/-**"
+  },
+  {
+    "course_id": 250,
+    "fee": "Rs. 4,000/-*"
+  },
+  {
+    "course_id": 251,
+    "fee": "Rs. 6,500/-* (as per MoC signed between IGNOU and NVS)"
+  },
+  {
+    "course_id": 252,
+    "fee": "Rs.2,000/-*"
+  },
+  {
+    "course_id": 253,
+    "fee": "Rs.6,000/-*"
+  },
+  {
+    "course_id": 254,
+    "fee": "Rs.2,400/-*"
+  },
+  {
+    "course_id": 255,
+    "fee": "Rs. 4,000/-*"
+  },
+  {
+    "course_id": 256,
+    "fee": "Rs.1,200/-*"
+  },
+  {
+    "course_id": 257,
+    "fee": "Rs.1,500/-*"
+  },
+  {
+    "course_id": 258,
+    "fee": "Rs.2,000/-*"
+  },
+  {
+    "course_id": 259,
+    "fee": "Rs.18,00/-*"
+  },
+  {
+    "course_id": 260,
+    "fee": "Rs.2,600/-*"
+  },
+  {
+    "course_id": 261,
+    "fee": "Rs. 1,800/-*"
+  },
+  {
+    "course_id": 262,
+    "fee": "Rs.8,400/-*"
+  },
+  {
+    "course_id": 263,
+    "fee": "Rs.1,400/-*"
+  },
+  {
+    "course_id": 264,
+    "fee": "Rs.2,700/-*"
+  },
+  {
+    "course_id": 265,
+    "fee": "Rs. 1,800/-*"
+  },
+  {
+    "course_id": 266,
+    "fee": "Rs. 3,200/-*"
+  },
+  {
+    "course_id": 267,
+    "fee": "Rs.5,700/-*"
+  },
+  {
+    "course_id": 268,
+    "fee": "Rs.5,400/-*"
+  },
+  {
+    "course_id": 269,
+    "fee": "Rs. 5000/-*"
+  },
+  {
+    "course_id": 270,
+    "fee": "Rs.2,400/-*"
+  },
+  {
+    "course_id": 271,
+    "fee": "Rs.4,200/-*"
+  },
+  {
+    "course_id": 272,
+    "fee": "Rs. 1,800/-*"
+  },
+  {
+    "course_id": 273,
+    "fee": "Rs, 1000/-*"
+  },
+  {
+    "course_id": 274,
+    "fee": "Rs.1,400/-*"
+  },
+  {
+    "course_id": 275,
+    "fee": "Rs. 1000/-*"
+  },
+  {
+    "course_id": 276,
+    "fee": "Rs.4,200/-*"
+  },
+  {
+    "course_id": 277,
+    "fee": "Rs.4,800/-*"
+  },
+  {
+    "course_id": 278,
+    "fee": "Rs.2,400/-*"
+  },
+  {
+    "course_id": 279,
+    "fee": "Rs.3,600/-*"
+  },
+  {
+    "course_id": 280,
+    "fee": "Rs.1,400/-*"
+  },
+  {
+    "course_id": 281,
+    "fee": "Rs.1,800/-*"
+  },
+  {
+    "course_id": 282,
+    "fee": "Rs. 6,600/-*"
+  },
+  {
+    "course_id": 283,
+    "fee": "Rs. 2,500/-*"
+  },
+  {
+    "course_id": 284,
+    "fee": "Rs. 5,500/-*"
+  },
+  {
+    "course_id": 285,
+    "fee": "Rs. 2,500/-*"
+  },
+  {
+    "course_id": 286,
+    "fee": "Rs. 4,500/-*"
+  },
+  {
+    "course_id": 287,
+    "fee": "Rs. 2500/-*"
+  },
+  {
+    "course_id": 288,
+    "fee": "Rs. 1,800/-*"
+  },
+  {
+    "course_id": 289,
+    "fee": "Rs. 3,500/-*"
+  },
+  {
+    "course_id": 290,
+    "fee": "Rs. 5000/-*"
+  },
+  {
+    "course_id": 291,
+    "fee": "Rs.3,000/-*"
+  },
+  {
+    "course_id": 292,
+    "fee": "Rs.6,600/-*"
+  },
+  {
+    "course_id": 293,
+    "fee": "Rs.6,600/-*"
+  },
+  {
+    "course_id": 294,
+    "fee": "Rs.2,400/-*"
+  },
+  {
+    "course_id": 295,
+    "fee": "Rs. 6,000/-*"
+  },
+  {
+    "course_id": 296,
+    "fee": "Rs.6,500/-*"
+  },
+  {
+    "course_id": 297,
+    "fee": "Rs.7,500/-*"
+  },
+  {
+    "course_id": 298,
+    "fee": "Rs.6,000/-*"
+  },
+  {
+    "course_id": 299,
+    "fee": "Rs. 15,000/-*"
+  },
+  {
+    "course_id": 300,
+    "fee": "Rs. 4,000/-*"
+  },
+  {
+    "course_id": 301,
+    "fee": "Rs.4,000/-*"
+  },
+  {
+    "course_id": 302,
+    "fee": "Rs. 4,000/-*"
+  },
+  {
+    "course_id": 303,
+    "fee": "Rs.4,000/-*"
+  },
+  {
+    "course_id": 304,
+    "fee": "Rs.4,000/-*"
+  },
+  {
+    "course_id": 305,
+    "fee": "Rs.4,000/-*"
+  },
+  {
+    "course_id": 306,
+    "fee": "Rs. 3,000/-*"
+  },
+  {
+    "course_id": 307,
+    "fee": "Rs. 3,600/-*"
+  },
+  {
+    "course_id": 308,
+    "fee": "Rs. 5,000/-*"
+  },
+  {
+    "course_id": 309,
+    "fee": "Rs. 9,300/-*"
+  },
+  {
+    "course_id": 310,
+    "fee": "Rs. 5,000/-*"
+  },
+  {
+    "course_id": 311,
+    "fee": "Rs.1,800/-*"
+  },
+  {
+    "course_id": 312,
+    "fee": "Rs. 6,600/-*"
+  },
+  {
+    "course_id": 313,
+    "fee": "Rs. 5,000/-*"
+  },
+  {
+    "course_id": 314,
+    "fee": "Rs. 3,600/-*"
+  },
+  {
+    "course_id": 315,
+    "fee": "Rs. 2,000/-*"
+  },
+  {
+    "course_id": 316,
+    "fee": "Rs. 3,800/-*"
+  },
+  {
+    "course_id": 317,
+    "fee": "Rs. 2,500/-*"
+  },
+  {
+    "course_id": 318,
+    "fee": "Rs. 2,500/-*"
+  },
+  {
+    "course_id": 319,
+    "fee": "Rs. 1100/-*"
+  },
+  {
+    "course_id": 320,
+    "fee": "Rs. 500/-*"
+  },
+  {
+    "course_id": 321,
+    "fee": "Rs. 1200/-*"
+  },
+  {
+    "course_id": 322,
+    "fee": "Rs. 1000/-*"
   }
 ]
