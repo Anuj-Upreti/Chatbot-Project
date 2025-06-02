@@ -17,7 +17,7 @@ async function loadCourseData() {
         courseNames = await namesResponse.json();
         eligibilityData = await eligibilityResponse.json();
         feeData = await feeResponse.json();
-        console.log("DEBUG: feeData content after loading:", feeData);
+        //console.log("DEBUG: feeData content after loading:", feeData);
 
         console.log("Course data loaded successfully!");
         // console.log("courseNames:", courseNames); // For debugging
@@ -37,7 +37,7 @@ loadCourseData();
 
 function handleCourseQuery(userInput) {
     const cleanedInput = userInput.toLowerCase();
-     console.log("handleCourseQuery: Cleaned user input:", cleanedInput); // NEW DEBUG LOG
+     //console.log("handleCourseQuery: Cleaned user input:", cleanedInput); // NEW DEBUG LOG
 
     // Ensure data is loaded before trying to access it
     if (courseNames.length === 0) {
@@ -47,40 +47,40 @@ function handleCourseQuery(userInput) {
 
     for (const course of courseNames) {
         const courseId = course.course_id; 
-        console.log(`handleCourseQuery: Checking course primary name: "${course['primary name']}" (ID: ${courseId})`); // NEW DEBUG LOG
+        //console.log(`handleCourseQuery: Checking course primary name: "${course['primary name']}" (ID: ${courseId})`); // NEW DEBUG LOG
         for (let i = 1; i <= 5; i++) {
             const nameVariant = course[`name_${i}`]?.toLowerCase();
             if (nameVariant && cleanedInput.includes(nameVariant)) {
-                 console.log(`  MATCH FOUND for variant "${nameVariant}". Returning courseId: ${courseId}`); // NEW DEBUG LOG
+                // console.log(`  MATCH FOUND for variant "${nameVariant}". Returning courseId: ${courseId}`); // NEW DEBUG LOG
                 return courseId;
             }
         }
 
         const primaryName = course['primary name'].toLowerCase();
-        console.log(`  Checking primary name: "${primaryName}"`); // NEW DEBUG LOG
+       // console.log(`  Checking primary name: "${primaryName}"`); // NEW DEBUG LOG
         if (cleanedInput.includes(primaryName)) {
-        console.log(`  MATCH FOUND for primary name "${primaryName}". Returning courseId: ${courseId}`); // NEW DEBUG LOG
+       // console.log(`  MATCH FOUND for primary name "${primaryName}". Returning courseId: ${courseId}`); // NEW DEBUG LOG
             return courseId;
         }
     }
-    console.log("handleCourseQuery: No course match found for input."); // NEW DEBUG LOG 
+  //  console.log("handleCourseQuery: No course match found for input."); // NEW DEBUG LOG 
     return null;
 }
 
 function generateCourseResponse(intent, courseId) { 
-    console.log("DEBUG: generateCourseResponse called with intent:", intent, "and courseId:", courseId, " (type:", typeof courseId, ")");
+    //console.log("DEBUG: generateCourseResponse called with intent:", intent, "and courseId:", courseId, " (type:", typeof courseId, ")");
     if (feeData.length === 0 || eligibilityData.length === 0) {
         console.warn("Fee or eligibility data not yet loaded for generateCourseResponse.");
-        return "Information is not yet available. Please try again in a moment.";
+        return "Hmm, data is missing. Read ahead while I fix it.";
     }
 
     if (intent === 'course_fees') {
         if (courseId === 0) {
-         return "IGNOU course fee ranges between Rs. 1,200/- to Rs. 30,000/- per year depending on the course. Do you have a course in mind?.";
+         return "IGNOU course fee ranges between Rs. 1,200/- to Rs. 30,000/- per year depending on the course. Do you have a course in mind?👀";
         }
 
         const feeObj = feeData.find(item => {
-          console.log("DEBUG: Comparing fee item.course_id:", item.course_id, "(type:", typeof item.course_id, ") with search courseId:", courseId, "(type:", typeof courseId, ")");
+          //console.log("DEBUG: Comparing fee item.course_id:", item.course_id, "(type:", typeof item.course_id, ") with search courseId:", courseId, "(type:", typeof courseId, ")");
             return item.course_id === courseId;
              }
         ); // Changed fee_id to course_id
@@ -95,7 +95,7 @@ function generateCourseResponse(intent, courseId) {
         return eligibilityObj ? `Eligibility for ${getPrimaryCourseName(courseId)}: ${eligibilityObj.eligibility}` : "Eligibility details are not available.";
     }
 
-    return "No information available.";
+    return "I'm still collecting information🔎. Till then keep reading.";
 }
 
 function getPrimaryCourseName(courseId) { // Changed fee_id to courseId
