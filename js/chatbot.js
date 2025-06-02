@@ -6,7 +6,7 @@ import { displayUserMessage, displayBotMessage } from './functions.js';
 import { detectIntent } from './intentMatcher.js';
 import { handleCourseQuery, generateCourseResponse, getPrimaryCourseName } from './courseLogic.js';
 
-let currentCourseId = 1;  // Default to MA Political Science
+let currentCourseId = 10;  // Default to MA Political Science
 let currentCourseName = 'MA Political Science'; // Used in static replies
 
 function handleUserInput(userInput) {
