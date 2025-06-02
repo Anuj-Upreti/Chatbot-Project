@@ -168,7 +168,7 @@
     "name_2": "Computer Applications Master",
     "name_3": "MCA New",
     "name_4": "Master's in Computer Applications",
-    "name_5": "Computer App Master"
+    "name_5": "MCA"
   },
   {
     "course_id": 20,
@@ -969,7 +969,7 @@
     "name_2": "BBA Degree",
     "name_3": "Business Admin Degree",
     "name_4": "Bachelor of Business Admin",
-    "name_5": "Business Administration"
+    "name_5": ""
   },
   {
     "course_id": 109,
@@ -987,7 +987,7 @@
     "name_2": "Computer Applications Bachelor",
     "name_3": "BCA New",
     "name_4": "Bachelor of Computer Applications",
-    "name_5": "Computer App Bachelor"
+    "name_5": "BCA"
   },
   {
     "course_id": 111,
@@ -2740,9 +2740,9 @@
     "primary name": "Certificate in Performing Arts Bharatanatyam",
     "name_1": "CPABN",
     "name_2": "Bharatanatyam Cert",
-    "name_3": "Cert Bharatanatyam",
-    "name_4": "Performing Arts Bharatanatyam Cert",
-    "name_5": "Bharatanatyam Dance Cert"
+    "name_3": "Certificate in Bharatanatyam",
+    "name_4": "Bharatanatyam Certificate",
+    "name_5": "Bharatanatyam Dance Certificate"
   },
   {
     "course_id": 306,
