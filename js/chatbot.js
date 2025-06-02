@@ -5,9 +5,11 @@ import { getTodayDate, getRandomGreeting } from './utils.js';
 import { displayUserMessage, displayBotMessage } from './functions.js'; 
 import { detectIntent } from './intentMatcher.js';
 import { handleCourseQuery, generateCourseResponse, getPrimaryCourseName } from './courseLogic.js';
+import { getCourseIdFromURL } from './urlDetector.js';
 
-let currentCourseId = 10;  // Default to MA Political Science
-let currentCourseName = 'MA Political Science'; // Used in static replies
+let currentCourseId = getCourseIdFromURL();
+let currentCourseName = getPrimaryCourseName(currentCourseId);
+
 
 function handleUserInput(userInput) {
   const cleanedInput = userInput.trim().toLowerCase();
