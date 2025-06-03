@@ -13,6 +13,49 @@ let pendingIntent = null;
 // ✅ Step 1: Global flag to track if this is the first user interaction
 let isFirstInteraction = true;
 
+let botReplyCount = 0;
+const MAX_REPLIES_BEFORE_FORM = 3;
+
+function displayBotMessage(message) {
+  const chatBox = document.getElementById('chat-box');
+  const botDiv = document.createElement('div');
+  botDiv.className = 'bot-message';
+  botDiv.innerText = message;
+  chatBox.appendChild(botDiv);
+  chatBox.scrollTop = chatBox.scrollHeight;
+
+  botReplyCount++;
+  checkLeadFormTrigger();
+}
+
+function checkLeadFormTrigger() {
+  const formAlreadyFilled = localStorage.getItem('lead_form_filled');
+  if (botReplyCount >= MAX_REPLIES_BEFORE_FORM && formAlreadyFilled !== 'true') {
+    openLeadForm();
+  }
+}
+
+function openLeadForm() {
+  const formOverlay = document.getElementById('lead-form-overlay');
+  const formIframe = document.getElementById('lead-form-iframe');
+
+  const formURL = window.__LEAD_FORM_URL__; // Injected via WP backend
+  if (!formURL) return;
+
+  formIframe.src = formURL;
+  formOverlay.style.display = 'block';
+}
+
+// Optional: Auto-close on form submission via external redirect detection
+window.addEventListener('message', (e) => {
+  if (e.data === 'formSubmitted') {
+    document.getElementById('lead-form-overlay').style.display = 'none';
+    localStorage.setItem('lead_form_filled', 'true');
+  }
+});
+
+
+
 // Load course data before setting course ID
 loadCourseData().then(() => {
   currentCourseId = getCourseIdFromURL();
