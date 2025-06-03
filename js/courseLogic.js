@@ -108,4 +108,4 @@ function getPrimaryCourseName(courseId) { // Changed fee_id to courseId
     return course ? course["primary name"] : "this course";
 }
 
-export { handleCourseQuery, generateCourseResponse, getPrimaryCourseName };
+export { handleCourseQuery, generateCourseResponse, getPrimaryCourseName, loadCourseData };
