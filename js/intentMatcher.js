@@ -51,7 +51,7 @@ export const intents = [
 
     {
       tags: ['result'],
-      keywords: ['exam result', '2025 result', 'ignou result', 'term end result', 'TEE result'],
+      keywords: ['exam result', 'result', '2025 result', 'ignou result', 'term end result', 'TEE result'],
       responseTag: 'result'
     },
 
