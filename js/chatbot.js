@@ -70,7 +70,7 @@ function handleUserInput(userInput) {
           break;
 
         case 'assignment':
-          response = "Assignments for July 2025 will be submitted till 30 September 2025*"
+          response = "Assignments for July 2025 will be submitted at the study cetners till 30 September 2025*"
           break;
       }
     }
