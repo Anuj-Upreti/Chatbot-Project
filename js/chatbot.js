@@ -107,7 +107,7 @@ if (!intent && newCourseId && !pendingIntent) {
           break;
         
         case 'date_sheet':
-          response = 'To download the ${currentCourseName} date sheet students can visit the IGNOU offcial website.';
+          response = `To download the ${currentCourseName} date sheet students can visit the IGNOU offcial website.`;
           break; 
 
         case 'process':
@@ -131,7 +131,7 @@ if (!intent && newCourseId && !pendingIntent) {
           break;
 
         case 'study_material':
-          response = 'You can find ${currentCourseName} study materials and PDFs on the eGyankosh portal and study centers.';
+          response = `You can find ${currentCourseName} study materials and PDFs on the eGyankosh portal and study centers.`;
           break;
         
         case 'hall_ticket':
@@ -147,7 +147,7 @@ if (!intent && newCourseId && !pendingIntent) {
           break;
 
         case 'assignment':
-          response = '${currentCourseName} assignments for July 2025 will be submitted at the study cetners till 30 September 2025*'
+          response = `${currentCourseName} assignments for July 2025 will be submitted at the study cetners till 30 September 2025*`
           break;
       }
     }
