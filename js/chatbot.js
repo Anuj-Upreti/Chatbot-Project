@@ -17,15 +17,15 @@ function handleUserInput(userInput) {
 
   // Check if user mentioned a different course
   const newCourseId = handleCourseQuery(cleanedInput);
-  console.log("DEBUG: chatbot.js - newCourseId from handleCourseQuery:", newCourseId, " (type:", typeof newCourseId, ")");
-  console.log("DEBUG: chatbot.js - currentCourseId after potential update:", currentCourseId, " (type:", typeof currentCourseId, ")");
+  //console.log("DEBUG: chatbot.js - newCourseId from handleCourseQuery:", newCourseId, " (type:", typeof newCourseId, ")");
+  //console.log("DEBUG: chatbot.js - currentCourseId after potential update:", currentCourseId, " (type:", typeof currentCourseId, ")");
   if (newCourseId && newCourseId !== currentCourseId) {
     currentCourseId = newCourseId;
     currentCourseName = getPrimaryCourseName(currentCourseId);
   }
 
   const intent = detectIntent(cleanedInput);
-  console.log("DEBUG: chatbot.js - Detected intent:", intent);
+  //console.log("DEBUG: chatbot.js - Detected intent:", intent);
   let response = "Sorry, I didn’t understand that. Please select an option or check available courses.";
 
   if (intent) {
