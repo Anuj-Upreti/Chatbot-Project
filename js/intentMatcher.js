@@ -63,7 +63,7 @@ export const intents = [
 
     {
       tags: ['assignment'],
-      keywords: ['assignment', 'assignmnent','assignments','assigment', 'assingment', 'submit','assignmnt','assignemnt','when','to','submit'],
+      keywords: ['assignment', 'assignmnent','assignments','assigment', 'assingment', 'submit','assignmnt','assignemnt','when','to','where','submit'],
       responseTag: 'assignment'
     }
   ];
