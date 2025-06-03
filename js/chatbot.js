@@ -67,6 +67,10 @@ function handleUserInput(userInput) {
         case 'contact_class':
           response = "Check for the schedule of contact classes on the website of your Regional Center."
           break;
+
+        case 'assignment':
+          response = "Assignments for July 2025 will be submitted till 30 September 2025*"
+          break;
       }
     }
   }

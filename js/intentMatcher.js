@@ -59,6 +59,12 @@ export const intents = [
       tags: ['contact_class'],
       keywords: ['contact class', 'contact session', 'ignou class'],
       responseTag: 'contact_class'
+    },
+
+    {
+      tags: ['assignment'],
+      keywords: ['assignment','assignments'],
+      responseTag: 'assignment'
     }
   ];
   
