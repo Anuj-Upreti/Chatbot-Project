@@ -31,7 +31,7 @@ function showOptions() {
     
     const chatBox = document.getElementById('chat-box');
     chatbotOptions.forEach(option => {
-        console.log(chatbotOptions); // to debug cached display
+        // console.log(chatbotOptions); // to debug cached display
         const button = document.createElement('button');
         button.className = 'option-btn';
         button.innerText = option;
