@@ -12,6 +12,7 @@ let currentCourseName = getPrimaryCourseName(currentCourseId);
 
 
 function handleUserInput(userInput) {
+  displayUserMessage(userInput);
   const cleanedInput = userInput.trim().toLowerCase();
 
   // Check if user mentioned a different course
