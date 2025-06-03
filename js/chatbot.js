@@ -7,7 +7,7 @@ import { handleCourseQuery, generateCourseResponse, getPrimaryCourseName, loadCo
 import { getCourseIdFromURL } from './urlDetector.js';
 
 let currentCourseId = 0;
-let currentCourseName = "this course";
+let currentCourseName = "IGNOU course";
 let pendingIntent = null;
 
 // ✅ Step 1: Global flag to track if this is the first user interaction
@@ -107,11 +107,11 @@ if (!intent && newCourseId && !pendingIntent) {
           break;
         
         case 'date_sheet':
-          response = "To download the date sheet students can visit the IGNOU offcial website.";
+          response = 'To download the ${currentCourseName} date sheet students can visit the IGNOU offcial website.';
           break; 
 
         case 'process':
-          response = "To apply, register on the IGNOU Samarth portal to create an account. After that, complete the student login to fill the form and pay the application fee.";
+          response = 'To apply, register on the IGNOU Samarth portal to create an account. After that, complete the student login to fill the form and pay the application fee.';
           break;
 
         case 'application_fee':
@@ -119,7 +119,7 @@ if (!intent && newCourseId && !pendingIntent) {
           break;
         
         case 'flip_courses':
-          response = "Flip courses are PGDMCH, PGDGM, DNA, PGCMDM, CESEIVI, CESEIHI, CESEIID. They are mosyly medical coruses with fixed number of seats.";
+          response = "FLIP courses are PGDMCH, PGDGM, DNA, PGCMDM, CESEIVI, CESEIHI, CESEIID. They are mosyly medical coruses with fixed number of seats.";
           break;
 
         case 'start_dates':
@@ -131,7 +131,7 @@ if (!intent && newCourseId && !pendingIntent) {
           break;
 
         case 'study_material':
-          response = "You can find study materials and PDFs on the eGyankosh portal and study centers.";
+          response = 'You can find ${currentCourseName} study materials and PDFs on the eGyankosh portal and study centers.';
           break;
         
         case 'hall_ticket':
@@ -147,7 +147,7 @@ if (!intent && newCourseId && !pendingIntent) {
           break;
 
         case 'assignment':
-          response = "Assignments for July 2025 will be submitted at the study cetners till 30 September 2025*"
+          response = '${currentCourseName} assignments for July 2025 will be submitted at the study cetners till 30 September 2025*'
           break;
       }
     }
