@@ -29,7 +29,7 @@ function handleUserInput(userInput) {
   let response = "Sorry, I didn’t understand that. Please select an option or check available courses.";
 
   if (intent) {
-    if (intent === 'course_fees' || intent === 'eligibility') {
+    if (intent === 'course_fee' || intent === 'eligibility') {
       response = generateCourseResponse(intent, currentCourseId);
     } else {
       switch (intent) {
@@ -50,15 +50,15 @@ function handleUserInput(userInput) {
           break;
 
         case 'last_dates':
-          response = "Last date for the admission process is 30 July 2025.";
+          response = "Last date for the admission process is 30 July 2025*.";
           break;
 
         case 'study_material':
-          response = "You can find study materials and PDFs on the eGyankosh portal.";
+          response = "You can find study materials and PDFs on the eGyankosh portal and study centers.";
           break;
         
         case 'hall_ticket':
-          response = "You can download the hall ticket at IGNOU portal."
+          response = "You can download the hall ticket from IGNOU website."
           break;
           
         case 'result':

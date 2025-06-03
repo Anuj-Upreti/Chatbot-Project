@@ -74,7 +74,7 @@ function generateCourseResponse(intent, courseId) {
         return "Hmm, data is missing. Read ahead while I fix it.";
     }
 
-    if (intent === 'course_fees') {
+    if (intent === 'course_fee') {
         if (courseId === 0) {
          return "IGNOU course fee ranges between Rs. 1,200/- to Rs. 30,000/- per year depending on the course. Do you have a course in mind?👀";
         }
@@ -84,7 +84,7 @@ function generateCourseResponse(intent, courseId) {
             return item.course_id === courseId;
              }
         ); // Changed fee_id to course_id
-        return feeObj ? `The fee for ${getPrimaryCourseName(courseId)} is ${feeObj.fee}.` : "Fee information is not available.";
+        return feeObj ? `The fee for ${getPrimaryCourseName(courseId)} is ${feeObj.course_fee}.` : "Fee information is not available.";
     }
 
     if (intent === 'eligibility') {

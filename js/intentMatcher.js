@@ -3,9 +3,9 @@
 
 export const intents = [
     {
-      tags: ['course_fees'],
+      tags: ['course_fee'],
       keywords: ['fees', 'fee', 'cost', 'charges', 'course', 'annum', 'year', 'structure'],
-      responseTag: 'course_fees'
+      responseTag: 'course_fee'
     },
     {
         tags: ['admission_fees'],
