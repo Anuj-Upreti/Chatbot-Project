@@ -3,12 +3,15 @@
 import { getTodayDate, getRandomGreeting } from './utils.js';
 import { displayUserMessage, displayBotMessage } from './functions.js'; 
 import { detectIntent } from './intentMatcher.js';
-import { handleCourseQuery, generateCourseResponse, getPrimaryCourseName, loadCourseData } from './courseLogic.js';
+import { handleCourseQuery, generateCourseResponse, getPrimaryCourseName, loadCourseData, isDataReady } from './courseLogic.js';
 import { getCourseIdFromURL } from './urlDetector.js';
 
 let currentCourseId = 0;
 let currentCourseName = "this course";
 let pendingIntent = null;
+
+// ✅ Step 1: Global flag to track if this is the first user interaction
+let isFirstInteraction = true;
 
 // Load course data before setting course ID
 loadCourseData().then(() => {
@@ -33,7 +36,24 @@ function handleUserInput(userInput) {
     currentCourseName = getPrimaryCourseName(currentCourseId);
   }
 
-  // ✅ Case: previous intent is pending and now course is detected (but no new intent)
+  // ✅ Step 2: NEW - Show full course info (fee + eligibility + last date) when
+  // no intent, course detected, and no pending intent
+  // ✅ Show full course info (fee + eligibility + last date) when no intent/pendingIntent but course is detected
+if (!intent && newCourseId && !pendingIntent) {
+  if (isDataReady()) {
+    const feeResponse = generateCourseResponse('course_fees', newCourseId);
+    const eligibilityResponse = generateCourseResponse('eligibility', newCourseId);
+    const lastDateResponse = "Last date for the admission process is 30 July 2025*.";
+
+    const combined = `${feeResponse}\n\n${eligibilityResponse}\n\n${lastDateResponse}`;
+    displayBotMessage(combined);
+  } else {
+    displayBotMessage("Please wait a moment while course data loads...");
+  }
+  return;
+}
+
+  // ✅ Existing logic: If previous intent is pending and now course is detected (but no new intent)
   if (pendingIntent && !intent && newCourseId) {
     const response = generateCourseResponse(pendingIntent, currentCourseId);
     pendingIntent = null;
@@ -58,7 +78,6 @@ function handleUserInput(userInput) {
       }
     } else {
       switch (intent) {
-
         case 'ignou_what':
           response = `IGNOU is the largest open university in the world offering online and distance courses.`;
           break;
@@ -129,6 +148,9 @@ function handleUserInput(userInput) {
       }
     }
   }
+
+  // ✅ Step 3: Turn off the first interaction flag to avoid repeat special logic
+  isFirstInteraction = false;
 
   displayBotMessage(response);
 }

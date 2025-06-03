@@ -4,31 +4,31 @@
 let courseNames = [];
 let eligibilityData = [];
 let feeData = [];
+let dataReady = false;
+
 
 // Function to load the JSON data
 async function loadCourseData() {
-    try {
-        const [namesResponse, eligibilityResponse, feeResponse] = await Promise.all([
-            fetch('../json/course_name.json'),
-            fetch('../json/eligibility.json'),
-            fetch('../json/fee_data.json')
-        ]);
-
-        courseNames = await namesResponse.json();
-        eligibilityData = await eligibilityResponse.json();
-        feeData = await feeResponse.json();
-        //console.log("DEBUG: feeData content after loading:", feeData);
-
-        console.log("Course data loaded successfully!");
-        // console.log("courseNames:", courseNames); // For debugging
-        // console.log("eligibilityData:", eligibilityData); // For debugging
-        // console.log("feeData:", feeData); // For debugging
-
-    } catch (error) {
-        console.error("Error loading course data:", error);
-        // You might want to display an error message to the user here
-    }
+  try {
+    const [namesResponse, eligibilityResponse, feeResponse] = await Promise.all([
+      fetch('../json/course_name.json'),
+      fetch('../json/eligibility.json'),
+      fetch('../json/fee_data.json')
+    ]);
+    courseNames = await namesResponse.json();
+    eligibilityData = await eligibilityResponse.json();
+    feeData = await feeResponse.json();
+    dataReady = true;
+    console.log("Course data loaded successfully!");
+  } catch (error) {
+    console.error("Error loading course data:", error);
+  }
 }
+
+function isDataReady() {
+  return dataReady;
+}
+
 
 // Call the data loading function immediately when the module is imported
 // This is important so the data is available when handleUserInput is called later
@@ -108,4 +108,4 @@ function getPrimaryCourseName(courseId) { // Changed fee_id to courseId
     return course ? course["primary name"] : "this course";
 }
 
-export { handleCourseQuery, generateCourseResponse, getPrimaryCourseName, loadCourseData };
+export { handleCourseQuery, generateCourseResponse, getPrimaryCourseName, loadCourseData, isDataReady };
