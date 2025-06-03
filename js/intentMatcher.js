@@ -20,7 +20,7 @@ export const intents = [
     },
     {
       tags: ['ignou_contact'],
-      keywords: ['call', 'contact', 'mobile', 'number', 'no.' 'address','adddress','adress','aderss'],
+      keywords: ['call', 'contact', 'mobile', 'number', 'no.', 'address','adddress','adress','aderss'],
       responseTag: 'ignou_contact'
     },
     {
