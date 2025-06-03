@@ -42,6 +42,18 @@ export const intents = [
       keywords: ['study material', 'learning material', 'notes', 'pdf', 'learning pdf', 'books'],
       responseTag: 'study_material'
     }
+
+    {
+      tags: ['hall_ticket'],
+      keywords: ['admit card', 'admit cards', 'hall ticket', 'hall tickets', 'exam ticket'],
+      responseTag: 'hall_ticket'
+    }
+
+    {
+      tags: ['result'],
+      keywords: ['exam result', '2025 result', 'ignou result', 'term end result', 'TEE result'],
+      responseTag: 'result'
+    }
   ];
   
   export function detectIntent(userInput) {
