@@ -5,7 +5,7 @@ export const intents = [
     
     {
       tags: ['hello'],
-      keywords: ['hi', 'hello', 'how', 'are', 'you', 'namaste'],
+      keywords: ['hii', 'hello', 'how', 'are', 'you', 'namaste'],
       responseTag: 'hello'
     },
     {
