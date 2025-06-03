@@ -41,7 +41,7 @@ function handleUserInput(userInput) {
   // ✅ Show full course info (fee + eligibility + last date) when no intent/pendingIntent but course is detected
 if (!intent && newCourseId && !pendingIntent) {
   if (isDataReady()) {
-    const feeResponse = generateCourseResponse('course_fees', newCourseId);
+    const feeResponse = generateCourseResponse('course_fee', newCourseId);
     const eligibilityResponse = generateCourseResponse('eligibility', newCourseId);
     const lastDateResponse = "Last date for the admission process is 30 July 2025*.";
 
