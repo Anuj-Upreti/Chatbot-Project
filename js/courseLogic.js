@@ -84,7 +84,7 @@ function generateCourseResponse(intent, courseId) {
             return item.course_id === courseId;
              }
         ); // Changed fee_id to course_id
-        return feeObj ? `The fee for ${getPrimaryCourseName(courseId)} is ${feeObj.course_fee}.` : "Fee information is not available.";
+        return feeObj ? `The fee for ${getPrimaryCourseName(courseId)} is ${feeObj.course_fee}.` : "Looks like I can't find fee details for this course. Can you confirm the course name again?";
     }
 
     if (intent === 'eligibility') {

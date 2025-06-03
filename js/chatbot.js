@@ -46,7 +46,7 @@ function handleUserInput(userInput) {
     pendingIntent = null;
   }
 
-  let response = "Sorry, I didn’t understand that. Please select an option or check available courses.";
+  let response = "Hmm, seems like I can't read that. Try a different course.";
 
   if (intent) {
     if (intent === 'course_fees' || intent === 'eligibility') {
