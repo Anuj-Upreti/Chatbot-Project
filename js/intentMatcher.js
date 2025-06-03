@@ -53,6 +53,12 @@ export const intents = [
       tags: ['result'],
       keywords: ['exam result', '2025 result', 'ignou result', 'term end result', 'TEE result'],
       responseTag: 'result'
+    },
+
+    {
+      tags: ['contact_class'],
+      keywords: ['contact class', 'contact session', 'ignou class'],
+      responseTag: 'contact_class'
     }
   ];
   
@@ -62,6 +68,7 @@ export const intents = [
       let score = 0;
       for (const word of intent.keywords) {
         if (input.includes(word)) score++;
+        if (input === word) score += 2; // give extra weight to exact match
       }
       return { tag: intent.responseTag, score };
     });

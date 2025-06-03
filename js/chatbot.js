@@ -63,6 +63,10 @@ function handleUserInput(userInput) {
         case 'result':
           response = "Result will be declared 30 days after IGNOU term end exams."
           break;
+
+        case 'contact_class':
+          response = "Check for the schedule of contact classes on the website of your Regional Center."
+          break;
       }
     }
   }
