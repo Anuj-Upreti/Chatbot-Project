@@ -78,6 +78,10 @@ if (!intent && newCourseId && !pendingIntent) {
       }
     } else {
       switch (intent) {
+        case 'hello':
+          response = `Hello, what can I help you with?`;
+          break;
+        
         case 'ignou_what':
           response = `IGNOU is the largest open university in the world offering online and distance courses.`;
           break;

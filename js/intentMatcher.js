@@ -4,6 +4,11 @@
 export const intents = [
     
     {
+      tags: ['hello'],
+      keywords: ['hi', 'hello', 'how', 'are', 'you', 'namaste'],
+      responseTag: 'hello'
+    },
+    {
       tags: ['ignou_what'],
       keywords: ['IGNOU', 'is', 'what', 'tell', 'me', 'about','detail'],
       responseTag: 'ignou_what'
@@ -20,7 +25,7 @@ export const intents = [
     },
     {
       tags: ['course_fee'],
-      keywords: ['fees', 'fee', 'cost', 'charges', 'course', 'annum', 'year', 'structure'],
+      keywords: ['fees', 'fee', 'cost', 'charges', 'course', 'yearly','annum', 'year', 'structure'],
       responseTag: 'course_fee'
     },
     {
@@ -54,7 +59,7 @@ export const intents = [
 
     {
         tags: ['flip_courses'],
-        keywords: ['flip', 'fixed', 'intake', 'learning'],
+        keywords: ['flip', 'courses','fixed', 'intake', 'learning'],
         responseTag: 'application_fee'
     },
 
@@ -70,7 +75,7 @@ export const intents = [
     },
     {
         tags: ['eligibility'],
-        keywords: ['who', 'can', 'apply', 'eligible', 'admission', 'eligibility'],
+        keywords: ['who', 'can', 'apply', 'eligiblity','eligible','eligibel', 'admission', 'eligibility'],
         responseTag: 'eligibility'
     },
     {
@@ -93,7 +98,7 @@ export const intents = [
 
     {
       tags: ['contact_class'],
-      keywords: ['contact class', 'contact session', 'ignou class'],
+      keywords: ['contact class', 'contact session', 'contact classes','ignou class'],
       responseTag: 'contact_class'
     },
 
