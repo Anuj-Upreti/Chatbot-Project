@@ -28,12 +28,14 @@ function simulateTyping(text, callback) {
 }
 
 function showOptions() {
+    
     const chatBox = document.getElementById('chat-box');
     chatbotOptions.forEach(option => {
         const button = document.createElement('button');
         button.className = 'option-btn';
         button.innerText = option;
         button.addEventListener('click', () => chatbotHandleUserInput(option));
+        button.innerText = option.charAt(0).toUpperCase() + option.slice(1);
         chatBox.appendChild(button);
 
         button.style.opacity = 0;
