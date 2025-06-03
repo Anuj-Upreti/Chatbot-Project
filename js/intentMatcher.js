@@ -70,7 +70,7 @@ export const intents = [
     },
     {
         tags: ['last_dates'],
-        keywords: ['when', 'is', 'final', 'end', 'ends', 'to', 'date', 'last', 'deadline', 'admission'],
+        keywords: ['when', 'final', 'end', 'ends', 'apply', 'date', 'last', 'deadline', 'admission'],
         responseTag: 'last_dates'
     },
     {
