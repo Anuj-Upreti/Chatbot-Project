@@ -13,7 +13,6 @@ let currentCourseName = getPrimaryCourseName(currentCourseId);
 
 function handleUserInput(userInput) {
   const cleanedInput = userInput.trim().toLowerCase();
-  displayUserMessage(userInput);
 
   // Check if user mentioned a different course
   const newCourseId = handleCourseQuery(cleanedInput);
@@ -55,6 +54,14 @@ function handleUserInput(userInput) {
 
         case 'study_material':
           response = "You can find study materials and PDFs on the eGyankosh portal.";
+          break;
+        
+        case 'hall_ticket':
+          response = "You can download the hall ticket at IGNOU portal."
+          break;
+          
+        case 'result':
+          response = "Result will be declared 30 days after IGNOU term end exams."
           break;
       }
     }
