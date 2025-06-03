@@ -5,12 +5,12 @@ export const intents = [
     
     {
       tags: ['hello'],
-      keywords: ['hii', 'hello', 'how', 'are', 'you', 'namaste'],
+      keywords: ['hii', 'hello', 'how', 'namaste'],
       responseTag: 'hello'
     },
     {
       tags: ['ignou_what'],
-      keywords: ['IGNOU', 'is', 'what', 'tell', 'me', 'about','detail'],
+      keywords: ['IGNOU', 'what', 'tell', 'about','detail'],
       responseTag: 'ignou_what'
     },
     {
