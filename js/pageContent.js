@@ -2,7 +2,7 @@
 
 export const pageContent = [
   {
-    title: 'IGNOU Chatbot By Anuj Upreti',
+    title: 'IGNOU MA Political Science Admission 2025',
     paragraphs: [
       `Master of Arts in Political Science at IGNOU is a <strong>2-year PG course</strong> covering political theory, international relations, and public administration. Admissions are <strong>open for the January 2025 session</strong>. Students can <strong>apply online</strong> through the official ODL admission portal. The registration fee is <strong>Rs. 300/-</strong>.`,
       `Eligibility requires a <strong>bachelor’s degree in any discipline</strong>. The <strong>yearly fee</strong> is <strong>Rs. 7,700/-</strong>. The <strong>last date</strong> to apply is <strong>31 March 2025</strong>.`
