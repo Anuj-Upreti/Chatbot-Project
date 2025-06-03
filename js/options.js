@@ -2,7 +2,7 @@
 
 export const chatbotOptions = [
   "Result",
-  "Hall Ticket",
+  "hall_ticket",
   "Exams",
   "Admission July Session"
 ];
