@@ -57,7 +57,7 @@ export const intents = [
   ];
   
   export function detectIntent(userInput) {
-    const input = userInput.toLowerCase();
+    const input = userInput.toLowerCase().replace(/\s+/g, ' ').trim(); // 👈 new: collapse multiple spaces
     const scores = intents.map(intent => {
       let score = 0;
       for (const word of intent.keywords) {
