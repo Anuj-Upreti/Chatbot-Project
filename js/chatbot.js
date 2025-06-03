@@ -1,48 +1,102 @@
 // js/chatbot.js
 
-//import { botData } from './botData.js';
 import { getTodayDate, getRandomGreeting } from './utils.js';
 import { displayUserMessage, displayBotMessage } from './functions.js'; 
 import { detectIntent } from './intentMatcher.js';
-import { handleCourseQuery, generateCourseResponse, getPrimaryCourseName } from './courseLogic.js';
+import { handleCourseQuery, generateCourseResponse, getPrimaryCourseName, loadCourseData } from './courseLogic.js';
 import { getCourseIdFromURL } from './urlDetector.js';
 
-let currentCourseId = getCourseIdFromURL();
-let currentCourseName = getPrimaryCourseName(currentCourseId);
+let currentCourseId = 0;
+let currentCourseName = "this course";
+let pendingIntent = null;
 
+// Load course data before setting course ID
+loadCourseData().then(() => {
+  currentCourseId = getCourseIdFromURL();
+  currentCourseName = getPrimaryCourseName(currentCourseId);
+});
 
 function handleUserInput(userInput) {
-  displayUserMessage(userInput);
-  const cleanedInput = userInput.trim().toLowerCase();
+  const cleanedInput = userInput.trim().toLowerCase().replace(/\s+/g, ' ');
 
-  // Check if user mentioned a different course
+  // Show message only for typed input (not from options)
+  if (!window.__suppressUserDisplay) {
+    displayUserMessage(userInput);
+  }
+  window.__suppressUserDisplay = false; // reset
+
+  const intent = detectIntent(cleanedInput);
   const newCourseId = handleCourseQuery(cleanedInput);
-  //console.log("DEBUG: chatbot.js - newCourseId from handleCourseQuery:", newCourseId, " (type:", typeof newCourseId, ")");
-  //console.log("DEBUG: chatbot.js - currentCourseId after potential update:", currentCourseId, " (type:", typeof currentCourseId, ")");
+
   if (newCourseId && newCourseId !== currentCourseId) {
     currentCourseId = newCourseId;
     currentCourseName = getPrimaryCourseName(currentCourseId);
   }
 
-  const intent = detectIntent(cleanedInput);
-  //console.log("DEBUG: chatbot.js - Detected intent:", intent);
+  // ✅ Case: previous intent is pending and now course is detected (but no new intent)
+  if (pendingIntent && !intent && newCourseId) {
+    const response = generateCourseResponse(pendingIntent, currentCourseId);
+    pendingIntent = null;
+    displayBotMessage(response);
+    return;
+  }
+
+  // ✅ Override pending intent if user asks something else
+  if (intent) {
+    pendingIntent = null;
+  }
+
   let response = "Sorry, I didn’t understand that. Please select an option or check available courses.";
 
   if (intent) {
-    if (intent === 'course_fee' || intent === 'eligibility') {
-      response = generateCourseResponse(intent, currentCourseId);
+    if (intent === 'course_fees' || intent === 'eligibility') {
+      if (currentCourseId === 0) {
+        response = generateCourseResponse(intent, 0); // general fallback
+        pendingIntent = intent; // store for next message
+      } else {
+        response = generateCourseResponse(intent, currentCourseId);
+      }
     } else {
       switch (intent) {
+
+        case 'ignou_what':
+          response = `IGNOU is the largest open university in the world offering online and distance courses.`;
+          break;
+        
+        case 'ignou_courses':
+          response = `IGNOU offers 300+ UG, PG, Diploma, & Certificate level courses in Science, Arts, and Humanities.`;
+          break;
+
+        case 'ignou_contact':
+          response = `Students can contact IGNOU via call at 📱29572513 and by post at IGNOU Maidan Garhi, New Delhi, India Pin Code: 110068`;
+          break;
+
         case 'admission_fees':
-          response = `${currentCourseName} admission fee is Rs. 3,850/- plus the university development fee of Rs. 200/-.`;
+          response = `${currentCourseName} admission fee is the first installment of course fee plus the university development fee of Rs. 200/-.`;
           break;
 
         case 'exam_fees':
           response = "To appear in the exam pay a fee of Rs. 200/- per theory subject and Rs. 300/- per practical subject.";
-          break;        
+          break;
+        
+        case 'exam_date':
+          response = "Term end examination will start from 12th June 2025 and will end on 19th July 2025.";
+          break;
+        
+        case 'date_sheet':
+          response = "To download the date sheet students can visit the IGNOU offcial website.";
+          break; 
 
         case 'process':
           response = "To apply, register on the IGNOU Samarth portal to create an account. After that, complete the student login to fill the form and pay the application fee.";
+          break;
+
+        case 'application_fee':
+          response = "IGNOU 2025 July application fee for most courses is Rs. 300/-. However FLIP Courses need Rs. 500/-.";
+          break;
+        
+        case 'flip_courses':
+          response = "Flip courses are PGDMCH, PGDGM, DNA, PGCMDM, CESEIVI, CESEIHI, CESEIID. They are mosyly medical coruses with fixed number of seats.";
           break;
 
         case 'start_dates':

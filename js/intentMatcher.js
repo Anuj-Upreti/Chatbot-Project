@@ -2,6 +2,22 @@
 // File: js/intentMatcher.js
 
 export const intents = [
+    
+    {
+      tags: ['ignou_what'],
+      keywords: ['IGNOU', 'is', 'what', 'tell', 'me', 'about','detail'],
+      responseTag: 'ignou_what'
+    },
+    {
+      tags: ['ignou_courses'],
+      keywords: ['courses', 'course list', 'programmes', 'programs','degree','list', 'what', 'are', 'IGNOU', 'offer', 'name', 'UG', 'PG'],
+      responseTag: 'ignou_courses'
+    },
+    {
+      tags: ['ignou_contact'],
+      keywords: ['where', 'is', 'to','call', 'contact', 'mobile', 'number', 'no.', 'no', 'address','adddress','adress','aderss'],
+      responseTag: 'ignou_contact'
+    },
     {
       tags: ['course_fee'],
       keywords: ['fees', 'fee', 'cost', 'charges', 'course', 'annum', 'year', 'structure'],
@@ -14,14 +30,34 @@ export const intents = [
     },
     {
         tags: ['exam_fees'],
-        keywords: ['fees', 'fee', 'cost', 'charges', 'exam', 'term', 'end', 'examination', 'TEE', 'tee'],
+        keywords: ['fees', 'fee', 'cost', 'charges', 'exam', 'term', 'end', 'examination', 'TEE', 'tee','what','how'],
         responseTag: 'exam_fees'
     },
+
     {
-      tags: ['process'],
-      keywords: ['process', 'where', 'apply', 'procedure', 'how', 'to', 'steps', 'admission', 'register'],
-      responseTag: 'process'
+        tags: ['exam_date'],
+        keywords: ['date', 'when', 'will', 'start', 'exam', 'term', 'end', 'examination', 'TEE', 'tee'],
+        responseTag: 'exam_fees'
     },
+
+    {
+        tags: ['process'],
+        keywords: ['process', 'where', 'apply', 'procedure', 'how', 'to', 'steps', 'admission', 'register'],
+        responseTag: 'process'
+    },
+
+    {
+        tags: ['application_fee'],
+        keywords: ['application', 'fee', 'fees', 'apply', 'how', 'much', 'what'],
+        responseTag: 'application_fee'
+    },
+
+    {
+        tags: ['flip_courses'],
+        keywords: ['flip', 'fixed', 'intake', 'learning'],
+        responseTag: 'application_fee'
+    },
+
     {
         tags: ['start_dates'],
         keywords: ['date', 'when', 'will', 'start', 'open', 'admission', 'registration'],
