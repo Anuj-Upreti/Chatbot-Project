@@ -35,7 +35,6 @@ function showOptions() {
         button.className = 'option-btn';
         button.innerText = option;
         button.addEventListener('click', () => chatbotHandleUserInput(option));
-        button.innerText = option.charAt(0).toUpperCase() + option.slice(1);
         chatBox.appendChild(button);
 
         button.style.opacity = 0;
