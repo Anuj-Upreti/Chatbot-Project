@@ -41,7 +41,7 @@ export const intents = [
       tags: ['study_material'],
       keywords: ['study material', 'learning material', 'notes', 'pdf', 'learning pdf', 'books'],
       responseTag: 'study_material'
-    }
+    },
 
     {
       tags: ['hall_ticket'],
