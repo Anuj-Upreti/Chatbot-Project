@@ -49,7 +49,7 @@ function handleUserInput(userInput) {
   let response = "Hmm, seems like I can't read that. Try a different course.";
 
   if (intent) {
-    if (intent === 'course_fees' || intent === 'eligibility') {
+    if (intent === 'course_fee' || intent === 'eligibility') {
       if (currentCourseId === 0) {
         response = generateCourseResponse(intent, 0); // general fallback
         pendingIntent = intent; // store for next message
