@@ -47,7 +47,7 @@ export const intents = [
       tags: ['hall_ticket'],
       keywords: ['admit card', 'admit cards', 'hall ticket', 'hall tickets', 'exam ticket'],
       responseTag: 'hall_ticket'
-    }
+    },
 
     {
       tags: ['result'],
