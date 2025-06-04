@@ -36,9 +36,11 @@ function showOptions() {
         button.className = 'option-btn';
         button.innerText = option;
         button.addEventListener('click', () => {
-         displayUserMessage(option); // show original casing
-         chatbotHandleUserInput(option.toLowerCase()); // send lowercased version to logic
-        });
+         window.__suppressUserDisplay = true; // prevent duplicate display in chatbot.js
+         displayUserMessage(option);          // display button text with original casing
+         chatbotHandleUserInput(option.toLowerCase()); // process with lowercase logic
+         });
+
         chatBox.appendChild(button);
         button.style.opacity = 0;
         setTimeout(() => {
