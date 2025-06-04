@@ -23,7 +23,7 @@ function handleUserInput(userInput) {
   const cleanedInput = userInput.trim().toLowerCase().replace(/\s+/g, ' ');
 
   if (!window.__suppressUserDisplay) {
-    //displayUserMessage(userInput);
+    displayUserMessage(userInput);
   }
   window.__suppressUserDisplay = false;
 
